@@ -175,57 +175,41 @@
           </div>
         </article>
 
-        <article class="project-card">
-          <div class="project-card__visual project-card__visual--slider">
-            <div class="about-slider about-slider--project" data-slider>
-              <div class="about-slider__viewport">
-                <figure class="about-slider__slide is-active">
-                  <img src="images/DrillWood.jpg" alt="DrillWood — скриншот 1" loading="lazy">
-                </figure>
-                <figure class="about-slider__slide">
-                  <img src="images/DrillWood2.jpg" alt="DrillWood — скриншот 2" loading="lazy">
-                </figure>
-                <figure class="about-slider__slide">
-                  <img src="images/DrillWood3.jpg" alt="DrillWood — скриншот 3" loading="lazy">
-                </figure>
-                <figure class="about-slider__slide">
-                  <img src="images/DrillWood4.jpg" alt="DrillWood — скриншот 4" loading="lazy">
-                </figure>
-                <span class="project-card__badge">PHP · MySQL · SQL</span>
-              </div>
-              <div class="about-slider__controls">
-                <button class="about-slider__btn" type="button" data-slider-prev aria-label="Предыдущий скриншот DrillWood">←</button>
-                <div class="about-slider__dots" role="tablist" aria-label="Скриншоты DrillWood">
-                  <button class="about-slider__dot is-active" type="button" role="tab" aria-selected="true" aria-label="Скриншот 1" data-slider-to="0"></button>
-                  <button class="about-slider__dot" type="button" role="tab" aria-selected="false" aria-label="Скриншот 2" data-slider-to="1"></button>
-                  <button class="about-slider__dot" type="button" role="tab" aria-selected="false" aria-label="Скриншот 3" data-slider-to="2"></button>
-                  <button class="about-slider__dot" type="button" role="tab" aria-selected="false" aria-label="Скриншот 4" data-slider-to="3"></button>
-                </div>
-                <button class="about-slider__btn" type="button" data-slider-next aria-label="Следующий скриншот DrillWood">→</button>
-              </div>
-            </div>
+        <article class="project-card project-card--reverse">
+          <div class="project-card__visual project-card__visual--food">
+            <span class="project-card__logo">FoodSource</span>
+            <span class="project-card__badge">ИИ · MySQL · Node.js</span>
           </div>
           <div class="project-card__body">
-            <h3>DrillWood — интернет-магазин</h3>
+            <h3>FoodSource — поиск поставщиков продуктов питания</h3>
             <p class="project-card__summary">
-              Учебный сайт с&nbsp;каталогом товаров и&nbsp;базой MySQL: отдельные страницы категорий, карточки товаров и&nbsp;оформление заказа.
+              B2B-платформа для покупателей (кафе, рестораны, ритейл, кейтеринг) и&nbsp;поставщиков (производители, дистрибьюторы, оптовики).
+              Сервис отвечает на&nbsp;вопрос: как быстро найти надёжного поставщика под свои критерии и&nbsp;оформить закупку или откликнуться на&nbsp;запрос покупателя.
             </p>
             <dl class="project-details">
               <div>
                 <dt>Задача</dt>
-                <dd>Сделать сайт с&nbsp;выводом каждой категории товаров на&nbsp;отдельную страницу, страницами товаров с&nbsp;размером, цветом и&nbsp;формированием цены, а&nbsp;также возможностью заказа с&nbsp;указанием данных клиента.</dd>
+                <dd>Собрать MVP двустороннего маркетплейса: каталог и&nbsp;скоринг поставщиков, сравнение, заказы, заявки на&nbsp;закупку, роли покупателя, поставщика и&nbsp;администратора.</dd>
               </div>
               <div>
                 <dt>Моя роль</dt>
-                <dd>Вёрстка страниц, PHP-логика, проектирование и запросы к MySQL, форма заказа с сохранением данных.</dd>
+                <dd>Проектирование и&nbsp;разработка с&nbsp;активным использованием ИИ: структура MySQL, API и&nbsp;интерфейсы; ChatGPT, Claude и&nbsp;Cursor — для черновиков SQL, логики сервиса, UI-текстов, отладки и&nbsp;ускорения рутинных этапов.</dd>
+              </div>
+              <div>
+                <dt>Функциональность</dt>
+                <dd>Покупатель: фильтры, рейтинг, сравнение до&nbsp;3&nbsp;поставщиков, заказ, заявки, избранное. Поставщик: каталог заявок, КП, свой каталог товаров, входящие заказы. Админ: модерация пользователей, поставщиков и&nbsp;заявок.</dd>
               </div>
               <div>
                 <dt>Стек</dt>
-                <dd>HTML, CSS, JavaScript, PHP, MySQL.</dd>
+                <dd>ChatGPT, Claude, Cursor · MySQL · HTML, CSS, JavaScript · Node.js · Docker.</dd>
               </div>
               <div>
                 <dt>Релевантность</dt>
-                <dd>Демонстрирует техническую базу для работы с&nbsp;ИИ-ассистентами при разработке: понимаю результат генерации и&nbsp;умею доводить его до рабочего продукта.</dd>
+                <dd>Кейс AI Generalist на&nbsp;продуктовой задаче: ИИ ускорил путь от&nbsp;идеи до&nbsp;рабочего сервиса — проектирование, код, контент и&nbsp;проверка решений в&nbsp;одном MVP.</dd>
+              </div>
+              <div>
+                <dt>Репозиторий</dt>
+                <dd><a href="https://github.com/max876907389247/Food-Source" target="_blank" rel="noopener noreferrer">github.com/max876907389247/Food-Source</a></dd>
               </div>
             </dl>
           </div>
@@ -287,8 +271,7 @@
           <div class="about-block__content">
             <h3>Обо мне</h3>
             <p>
-              Начинающий AI Generalist с&nbsp;практическим опытом применения ИИ в&nbsp;работе и&nbsp;обучении. В&nbsp;«Альянс АйТи» ускорял production-задачи с&nbsp;помощью ChatGPT, Claude и&nbsp;Cursor; в&nbsp;УПК&nbsp;МЦК — составлял учебные материалы и&nbsp;практические работы. Работаю с&nbsp;нейросетями для доработки изображений и&nbsp;ИИ-поиском в&nbsp;интернете.
-              Имею техническую базу (HTML, JavaScript, PHP, SQL) — понимаю, как проверять и&nbsp;доводить до результата то, что генерирует ИИ. Эффективно действую в&nbsp;коллективе; высокая стрессоустойчивость.
+              Начинающий AI Generalist с&nbsp;практическим опытом применения ИИ в&nbsp;работе и&nbsp;обучении. В&nbsp;«Альянс АйТи» ускорял production-задачи с&nbsp;помощью ChatGPT, Claude и&nbsp;Cursor; в&nbsp;УПК&nbsp;МЦК — составлял учебные материалы и&nbsp;практические работы. Разработал FoodSource — B2B-сервис поиска поставщиков с&nbsp;ИИ на&nbsp;всех этапах: от&nbsp;схемы БД до&nbsp;интерфейсов ролей. Работаю с&nbsp;нейросетями для доработки изображений и&nbsp;ИИ-поиском; умею проверять и&nbsp;доводить до&nbsp;результата то, что генерирует ИИ.
             </p>
           </div>
 

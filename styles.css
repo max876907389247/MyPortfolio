@@ -741,6 +741,32 @@ p {
   color: var(--text-muted);
 }
 
+.project-details a {
+  color: var(--accent);
+  font-weight: 600;
+  transition: color var(--transition-fast);
+}
+
+.project-details a:hover {
+  color: var(--accent-strong);
+}
+
+.project-card__visual--food {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    linear-gradient(135deg, rgba(148, 78, 61, 0.45), transparent 55%),
+    linear-gradient(180deg, var(--sand), var(--charcoal-deep));
+}
+
+.project-card__logo {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--cream);
+}
+
 /* Timeline */
 
 .timeline {
